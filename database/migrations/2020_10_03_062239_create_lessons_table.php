@@ -18,7 +18,7 @@ class CreateLessonsTable extends Migration
             $table->integer('session_id');
             $table->foreign('session_id')
                 ->references('id')
-                ->on('session')->onDelete('cascade');
+                ->on('sessions')->onDelete('cascade');
             $table->integer('lesson_number');
             $table->string('topic');
             $table->longText('body');

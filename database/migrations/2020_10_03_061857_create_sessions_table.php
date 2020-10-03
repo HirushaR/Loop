@@ -18,7 +18,7 @@ class CreateSessionsTable extends Migration
             $table->integer('course_id');
             $table->foreign('course_id')
                 ->references('id')
-                ->on('course')->onDelete('cascade');
+                ->on('courses')->onDelete('cascade');
             $table->string('title');
             $table->string('body');
             $table->timestamps();
