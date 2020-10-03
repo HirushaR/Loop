@@ -15,6 +15,12 @@ class CreateSessionsTable extends Migration
     {
         Schema::create('sessions', function (Blueprint $table) {
             $table->id();
+            $table->integer('course_id');
+            $table->foreign('course_id')
+                ->references('id')
+                ->on('course')->onDelete('cascade');
+            $table->string('title');
+            $table->string('body');
             $table->timestamps();
         });
     }
