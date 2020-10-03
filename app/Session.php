@@ -15,4 +15,10 @@ class Session extends Model
             'session_id',
             'user_id');
     }
+    public function course(){
+        return $this->belongsTo('App\Course');
+    }
+    public function lesson(){
+        return $this->hasMany('App\Lesson');
+    }
 }

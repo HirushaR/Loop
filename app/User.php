@@ -27,7 +27,7 @@ class User extends Authenticatable
             'user_id',
             'session_id');
     }
-    public function lession()
+    public function lesson()
     {
         //return $this->belongsToMany(RelatedModel, pivot_table_name, foreign_key_of_current_model_in_pivot_table, foreign_key_of_other_model_in_pivot_table);
         return $this->belongsToMany(

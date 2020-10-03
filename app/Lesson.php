@@ -15,4 +15,8 @@ class Lesson extends Model
             'lesson_id',
             'user_id');
     }
+    public function session(){
+        return $this->belongsTo('App\Session');
+    }
+
 }

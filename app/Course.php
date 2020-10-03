@@ -16,4 +16,8 @@ class Course extends Model
             'user_id');
     }
 
+    public function session(){
+        return $this->hasMany('App\Session');
+    }
+
 }
