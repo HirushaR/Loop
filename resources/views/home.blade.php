@@ -9,4 +9,5 @@
             </div>
         @endif
          <div>This is home</div>
+</div>
 @endsection
