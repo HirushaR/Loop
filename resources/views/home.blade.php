@@ -8,6 +8,8 @@
                 {{ session('status') }}
             </div>
         @endif
-         <div>This is home</div>
+         @foreach($courses as $cours)
+                 <h1>{{$cours->course_name}}</h1>
+            @endforeach
 </div>
 @endsection
